@@ -77,7 +77,7 @@ router.post("/login", async (req, res) => {
         if (err) {
           throw err;
         } else {
-          res.json({ token });
+          return res.json({ token });
         }
       }
     );
